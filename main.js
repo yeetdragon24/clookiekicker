@@ -15801,7 +15801,7 @@ Game.Launch=function()
 		Game.catchupLogic=0;
 		Game.Logic();
 		Game.catchupLogic=1;
-		
+		if (Game.cookies > 0) Game.cookies -= (Game.cookiesPS/50)
 		var time=Date.now();
 		
 		
